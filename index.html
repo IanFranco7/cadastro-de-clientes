@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@200;300;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="main.js" defer></script>
+    <title>Crud </title>
+</head>
+<body>
+    <header>
+       <h1 class="header-title">Cadastro de Clientes</h1>
+    </header>
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar cliente</button>
+        <table id="tableClient"class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Idade</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--<tr>
+                    <td>Maria</td>
+                    <td>Maria@gmail.com</td>
+                    <td>(21) 99071-0999</td>
+                    <td>18 anos</td>
+                    <td>
+                        <button type="button" class="button green">Editar</button>
+                        <button type="button" class="button red"  >Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>joao</td>
+                    <td>Maria@gmail.com</td>
+                    <td>(11) 97165-2222</td>
+                    <td>19 anos</td>
+                    <td>
+                        <button type="button" class="button green">Editar</button>
+                        <button type="button" class="button red">Excluir</button>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo cliente</h2>
+                    <span class="modal-close" id="modal-close">&#10006 </span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id='nome' data-index="new" class="modal-field" placeholder="Nome do cliente" required>
+                    <input type="email" id='email' class="modal-field" placeholder="E-mail do cliente" required>
+                    <input type="text" id="telefone" class="modal-field" placeholder="Celular do cliente" required>
+                    <input type="text" id="idade" class="modal-field" placeholder="Idade do cliente" required>
+                </form>
+                <footer class="modal-footer">
+                    <button class="button green" id="salvar">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    
+        
+    
+    
+</body>
+</html>
